@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="欢迎来到宇动源数智创研部主页">
+  
+  <title>
+    BDP IDB |
+    
+    宇动源数智创研部
+  </title>
+  <!-- Icon -->
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<script src="/js/pace.min.js"></script>
+
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="宇动源数智创研部" type="application/atom+xml">
+</head>
+
+<body>
+  <main class="content">
+    <section class="outer">
+  <article id="post-IDB 客户端文档" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h1 class="article-title" itemprop="name">
+  BDP IDB
+</h1>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2023/09/12/IDB%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%96%87%E6%A1%A3/" class="article-date">
+  <time datetime="2023-09-12T03:07:00.000Z" itemprop="datePublished">2023-09-12</time>
+</a>
+      
+    </div>
+    
+
+    
+    
+<div class="tocbot"></div>
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <h1 id="BDP-IDB-当前版本-0-0-1"><a href="#BDP-IDB-当前版本-0-0-1" class="headerlink" title="BDP IDB, 当前版本 0.0.1"></a>BDP IDB, 当前版本 <strong>0.0.1</strong></h1><p>BDP-IDB是为 BDP(大数据基础平台）提供的统一数据访问服务。IDB 客户端为用户提供了标准 JDBC 驱动，可以构建配合的使用的 Java 应用程序。</p>
+<h3 id="一、IDB-引入-jar-包"><a href="#一、IDB-引入-jar-包" class="headerlink" title="一、IDB 引入 jar 包"></a>一、IDB 引入 jar 包</h3><h4 id="1-设置Maven项目"><a href="#1-设置Maven项目" class="headerlink" title="1.设置Maven项目"></a>1.设置Maven项目</h4><p>1、在Maven项目的pom.xml文件中，添加开发工具包依赖。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.github.cosmobdai.bdp<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>bdpidb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>2、重新构建项目</p>
+<p>配置 <code>pom.xml</code> 文件后，使用 Maven 构建项目。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn package</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="二、使用-DriverManager-连接数据库"><a href="#二、使用-DriverManager-连接数据库" class="headerlink" title="二、使用 DriverManager 连接数据库"></a>二、使用 DriverManager 连接数据库</h3><p>1、如果应用程序需要通过 IDB JDBC 来访问和操纵 IDB 数据库中的数据，则应在程序开始时先装载 IDB 的 JDBC，可以使用以下语句完成该项工作：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Class.forName(<span class="string">&quot;io.github.cosmobdai.bdp.bdpidb.IdbDriver&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="三、-JDBC连接属性"><a href="#三、-JDBC连接属性" class="headerlink" title="三、 JDBC连接属性"></a>三、 JDBC连接属性</h3><p>1、除了标准的连接参数外，JDBC 驱动程序还提供了一些额外的连接参数去指定一些 JDBC 驱动程序的工作方式。这些参数或者可以在 connection URL 中设置，或者可以保存在一个 Properties object 中。以下例子分别使用以上两种方法建立一个不使用转义字符的连接：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">url</span> <span class="operator">=</span> <span class="string">&quot;jdbc:idb://localhost:54321/testdb&quot;</span>;</span><br><span class="line">java.util.<span class="type">Properties</span> <span class="variable">info</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">java</span>.util.Properties();</span><br><span class="line">info.put (<span class="string">&quot;user&quot;</span>, <span class="string">&quot;system&quot;</span>);</span><br><span class="line">info.put (<span class="string">&quot;password&quot;</span>, <span class="string">&quot;manager&quot;</span>);</span><br><span class="line"><span class="type">Connection</span> <span class="variable">con</span> <span class="operator">=</span> DriverManager.getConnection(url, info);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="四、-JDBC-查询结果集处理"><a href="#四、-JDBC-查询结果集处理" class="headerlink" title="四、 JDBC 查询结果集处理"></a>四、 JDBC 查询结果集处理</h3><p>建立服务器连接后，我们可以在该连接上执行查询语句，并返回结果集对象，具体方法如下：</p>
+<p>1、创建一个语句对象（Statement,PreparedStatement）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Statement stmt=conn.createStatement();</span><br></pre></td></tr></table></figure>
+
+<p>2、 执行一条SQL查询语句，并返回结果集</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ResultSet rs=stmt.executeQuery(<span class="string">&quot;select * from table1&quot;</span>);</span><br><span class="line">或者</span><br><span class="line">stmt.execute(<span class="string">&quot;select * from table1&quot;</span>);</span><br><span class="line">ResultSet rs=stmt.getResultSet();</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="五、-IDB-查询示例代码"><a href="#五、-IDB-查询示例代码" class="headerlink" title="五、 IDB 查询示例代码"></a>五、 IDB 查询示例代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Connection conn;</span><br><span class="line">        Statement stmt;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class.forName(<span class="string">&quot;io.github.cosmobdai.bdp.bdpidb.IdbDriver&quot;</span>);</span><br><span class="line">            conn = DriverManager.getConnection(<span class="string">&quot;jdbc:idb://192.168.1.119:54321/test&quot;</span>, <span class="string">&quot;system&quot;</span>, <span class="string">&quot;123456&quot;</span>);</span><br><span class="line">            stmt = conn.createStatement();</span><br><span class="line">            <span class="type">ResultSet</span> <span class="variable">resultSet</span> <span class="operator">=</span> stmt.executeQuery(<span class="string">&quot;select * from wang&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/2023/09/12/IDB%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%96%87%E6%A1%A3/" data-id="clmr5zgse0008ps0e4hxgfl8q" class="article-share-link">
+        Share
+      </a>
+      
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%A7%E5%93%81%E6%8A%80%E6%9C%AF/" rel="tag">产品技术</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+  
+<nav class="article-nav">
+  
+  
+  <a href="/2023/02/13/DSN%20SDK%20for%20Java/" class="article-nav-link">
+    <strong class="article-nav-caption">Older</strong>
+    <div class="article-nav-title">DSN SDK for Java</div>
+  </a>
+  
+</nav>
+
+  
+
+  
+  
+  
+  
+
+</article>
+</section>
+    <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+  <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+  <li><i class="fe fe-bookmark"></i> <span id="busuanzi_value_page_pv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>宇动源数智创研部 &copy; 2023</li>
+      
+        <li></li>
+      
+      <li>Powered by <a href="https://cosmobdai.yuque.com/cosmobdai" target="_blank">BDV - 前端</a></li>
+      <li>theme  <a href="https://github.com/COSMOBDAI">BDV白色主题（ps.视频会换的，嘿嘿）</a></li>
+    </ul>
+  </div>
+</footer>
+  </main>
+  <aside class="sidebar">
+    <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/hexo.svg" alt="宇动源数智创研部"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">书架</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/gallery">展台</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="Search">
+        <i class="fe fe-search"></i>
+        Search
+      </a>
+    </li>
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+  <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="fe fe-feed"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="随便搜点什么吧.....">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+  </aside>
+  
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<script src="/js/tocbot.min.js"></script>
+
+
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+  });
+</script>
+
+
+
+<script src="/js/ocean.js"></script>
+
+</body>
+
+</html>

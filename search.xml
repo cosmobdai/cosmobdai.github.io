@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>BDP IDB</title>
+    <url>/2023/09/12/IDB%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<h1 id="BDP-IDB-当前版本-0-0-1"><a href="#BDP-IDB-当前版本-0-0-1" class="headerlink" title="BDP IDB, 当前版本 0.0.1"></a>BDP IDB, 当前版本 <strong>0.0.1</strong></h1><p>BDP-IDB是为 BDP(大数据基础平台）提供的统一数据访问服务。IDB 客户端为用户提供了标准 JDBC 驱动，可以构建配合的使用的 Java 应用程序。</p>
+<h3 id="一、IDB-引入-jar-包"><a href="#一、IDB-引入-jar-包" class="headerlink" title="一、IDB 引入 jar 包"></a>一、IDB 引入 jar 包</h3><h4 id="1-设置Maven项目"><a href="#1-设置Maven项目" class="headerlink" title="1.设置Maven项目"></a>1.设置Maven项目</h4><p>1、在Maven项目的pom.xml文件中，添加开发工具包依赖。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.github.cosmobdai.bdp<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>bdpidb<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>2、重新构建项目</p>
+<p>配置 <code>pom.xml</code> 文件后，使用 Maven 构建项目。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mvn package</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="二、使用-DriverManager-连接数据库"><a href="#二、使用-DriverManager-连接数据库" class="headerlink" title="二、使用 DriverManager 连接数据库"></a>二、使用 DriverManager 连接数据库</h3><p>1、如果应用程序需要通过 IDB JDBC 来访问和操纵 IDB 数据库中的数据，则应在程序开始时先装载 IDB 的 JDBC，可以使用以下语句完成该项工作：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Class.forName(<span class="string">&quot;io.github.cosmobdai.bdp.bdpidb.IdbDriver&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="三、-JDBC连接属性"><a href="#三、-JDBC连接属性" class="headerlink" title="三、 JDBC连接属性"></a>三、 JDBC连接属性</h3><p>1、除了标准的连接参数外，JDBC 驱动程序还提供了一些额外的连接参数去指定一些 JDBC 驱动程序的工作方式。这些参数或者可以在 connection URL 中设置，或者可以保存在一个 Properties object 中。以下例子分别使用以上两种方法建立一个不使用转义字符的连接：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">url</span> <span class="operator">=</span> <span class="string">&quot;jdbc:idb://localhost:54321/testdb&quot;</span>;</span><br><span class="line">java.util.<span class="type">Properties</span> <span class="variable">info</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">java</span>.util.Properties();</span><br><span class="line">info.put (<span class="string">&quot;user&quot;</span>, <span class="string">&quot;system&quot;</span>);</span><br><span class="line">info.put (<span class="string">&quot;password&quot;</span>, <span class="string">&quot;manager&quot;</span>);</span><br><span class="line"><span class="type">Connection</span> <span class="variable">con</span> <span class="operator">=</span> DriverManager.getConnection(url, info);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="四、-JDBC-查询结果集处理"><a href="#四、-JDBC-查询结果集处理" class="headerlink" title="四、 JDBC 查询结果集处理"></a>四、 JDBC 查询结果集处理</h3><p>建立服务器连接后，我们可以在该连接上执行查询语句，并返回结果集对象，具体方法如下：</p>
+<p>1、创建一个语句对象（Statement,PreparedStatement）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Statement stmt=conn.createStatement();</span><br></pre></td></tr></table></figure>
+
+<p>2、 执行一条SQL查询语句，并返回结果集</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ResultSet rs=stmt.executeQuery(<span class="string">&quot;select * from table1&quot;</span>);</span><br><span class="line">或者</span><br><span class="line">stmt.execute(<span class="string">&quot;select * from table1&quot;</span>);</span><br><span class="line">ResultSet rs=stmt.getResultSet();</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="五、-IDB-查询示例代码"><a href="#五、-IDB-查询示例代码" class="headerlink" title="五、 IDB 查询示例代码"></a>五、 IDB 查询示例代码</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Connection conn;</span><br><span class="line">        Statement stmt;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class.forName(<span class="string">&quot;io.github.cosmobdai.bdp.bdpidb.IdbDriver&quot;</span>);</span><br><span class="line">            conn = DriverManager.getConnection(<span class="string">&quot;jdbc:idb://192.168.1.119:54321/test&quot;</span>, <span class="string">&quot;system&quot;</span>, <span class="string">&quot;123456&quot;</span>);</span><br><span class="line">            stmt = conn.createStatement();</span><br><span class="line">            <span class="type">ResultSet</span> <span class="variable">resultSet</span> <span class="operator">=</span> stmt.executeQuery(<span class="string">&quot;select * from wang&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>产品技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DSN SDK for Java</title>
     <url>/2023/02/13/DSN%20SDK%20for%20Java/</url>
     <content><![CDATA[<h1 id="DSN-SDK-for-Java-版本-1-0-1-2"><a href="#DSN-SDK-for-Java-版本-1-0-1-2" class="headerlink" title="DSN SDK for Java, 版本 1.0.1.2"></a>DSN SDK for Java, 版本 1.0.1.2</h1><p>BDP-DSN为 BDP 平台的统一数据存储服务。DSN SDK 提供了 BDP-DSN 服务的 Java API。使用 SDK，可以构建配合的使用的 Java 应用程序。</p>
