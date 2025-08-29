@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>数智创研部 创造价值思考和讨论会议 主要议程</title>
-    <url>/2023/10/09/%E6%95%B0%E6%99%BA%E5%88%9B%E7%A0%94%E9%83%A8%20%E5%88%9B%E9%80%A0%E4%BB%B7%E5%80%BC%E6%80%9D%E8%80%83%E5%92%8C%E8%AE%A8%E8%AE%BA%E4%BC%9A%E8%AE%AE%20%E4%B8%BB%E8%A6%81%E8%AE%AE%E7%A8%8B/</url>
-    <content><![CDATA[<h3 id="数智创研部-创造价值思考和讨论会议-主要议程"><a href="#数智创研部-创造价值思考和讨论会议-主要议程" class="headerlink" title="数智创研部 创造价值思考和讨论会议 主要议程"></a>数智创研部 创造价值思考和讨论会议 主要议程</h3><h4 id="会议目的"><a href="#会议目的" class="headerlink" title="会议目的"></a>会议目的</h4><p>旨在深入探讨每个团队成员在项目执行、技术创新和产品开发中的个人价值，揭示更高效的价值创造途径，从而共同推动个人、团队和公司的核心竞争力不断提升。</p>
+    <title>测试图片</title>
+    <url>/2025/08/29/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<h2 id="图片展示"><a href="#图片展示" class="headerlink" title="图片展示"></a>图片展示</h2><p><img src="/2025/08/29/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/1.png" alt="架构图"></p>
+<!-- 注释：改用标准markdown图片语法，避免asset_img标签与插件冲突 -->
+
+<p>这是一张测试图片</p>
+<h2 id="图片说明"><a href="#图片说明" class="headerlink" title="图片说明"></a>图片说明</h2><p>这张图片用于测试 Hexo 博客系统中的图片显示功能。</p>
+<h3 id="技术细节"><a href="#技术细节" class="headerlink" title="技术细节"></a>技术细节</h3><ul>
+<li>使用标准 Markdown 语法</li>
+<li>图片存放在文章同名文件夹中</li>
+<li>支持相对路径引用</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>产业运营中心 创造价值思考和讨论会议 主要议程</title>
+    <url>/2023/10/09/%E4%BA%A7%E4%B8%9A%E8%BF%90%E8%90%A5%E4%B8%AD%E5%BF%83%20%E5%88%9B%E9%80%A0%E4%BB%B7%E5%80%BC%E6%80%9D%E8%80%83%E5%92%8C%E8%AE%A8%E8%AE%BA%E4%BC%9A%E8%AE%AE%20%E4%B8%BB%E8%A6%81%E8%AE%AE%E7%A8%8B/</url>
+    <content><![CDATA[<h3 id="产业运营中心-创造价值思考和讨论会议-主要议程"><a href="#产业运营中心-创造价值思考和讨论会议-主要议程" class="headerlink" title="产业运营中心 创造价值思考和讨论会议 主要议程"></a>产业运营中心 创造价值思考和讨论会议 主要议程</h3><h4 id="会议目的"><a href="#会议目的" class="headerlink" title="会议目的"></a>会议目的</h4><p>旨在深入探讨每个团队成员在项目执行、技术创新和产品开发中的个人价值，揭示更高效的价值创造途径，从而共同推动个人、团队和公司的核心竞争力不断提升。</p>
 <h4 id="会议详情"><a href="#会议详情" class="headerlink" title="会议详情"></a>会议详情</h4><ul>
 <li><strong>日期：</strong> 待定，大家先准备</li>
 <li><strong>时间：</strong> 14:00 - 18:00</li>
@@ -20,10 +35,8 @@
 <h4 id="14-20-15-00-小组讨论：研发项目和产品的价值实现方式"><a href="#14-20-15-00-小组讨论：研发项目和产品的价值实现方式" class="headerlink" title="14:20 - 15:00 | 小组讨论：研发项目和产品的价值实现方式"></a>14:20 - 15:00 | 小组讨论：研发项目和产品的价值实现方式</h4><ul>
 <li><strong>参与小组：</strong><ul>
 <li>基础组：朱羽、王子健、李霄、佘盛龙、李富强</li>
-<li>配电研发组：吕毅、王俊生、赵尔倩、田卉</li>
-<li>产品组：唐迪、王正、王运龙</li>
-<li>交付组：卫斌、彭星杰、李林袁、刘欢欢、刘子明</li>
-<li>业务组：鲍红建、彭永强</li>
+<li>配电研发组：吕毅、王俊生、赵尔倩、田卉、唐迪、王正、王运龙</li>
+<li>交付组：卫斌、彭星杰、李林袁、刘欢欢、刘子明、鲍红建、彭永强</li>
 </ul>
 </li>
 <li><strong>讨论主题：</strong> 探讨研发项目和产品的价值实现路径、技术创新对业务价值的提升等问题。</li>
@@ -144,6 +157,423 @@
       </tags>
   </entry>
   <entry>
+    <title>研发管理流程规范(宇动源-BD-AI) V1.5</title>
+    <url>/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/</url>
+    <content><![CDATA[<h1 id="一、目的及适用范围"><a href="#一、目的及适用范围" class="headerlink" title="一、目的及适用范围"></a>一、目的及适用范围</h1><h2 id="1、目的"><a href="#1、目的" class="headerlink" title="1、目的"></a>1、目的</h2><p>规范研发流程，提高协作效率。<br>专注研发工作，科学规范考核。</p>
+<h2 id="2、核心价值与原则"><a href="#2、核心价值与原则" class="headerlink" title="2、核心价值与原则"></a>2、核心价值与原则</h2><ul>
+<li>抵制无计划、需求堆砌无目的式研发</li>
+<li>小型的、多元化的项目组（角色依赖和职责共享）</li>
+<li>以产品发布为中心，明确一致的目标</li>
+<li>分享产品的前景，所有人都参与设计</li>
+<li>认真从过去的项目中吸取经验</li>
+<li>共同管理，共同决策</li>
+<li>项目组成员在同一地点办公</li>
+<li>大型项目组也像小项目组一样运转<h2 id="3、适用范围"><a href="#3、适用范围" class="headerlink" title="3、适用范围"></a>3、适用范围</h2>本标准适用于产业运营中心的产品研发流程（项目开发、交付、售前支持仅作参考）。<br>本标准的使用者必须是本企业（宇动源（北京）信息技术有限公司）内部的测试人员，开发人员。<h2 id="4、总体说明"><a href="#4、总体说明" class="headerlink" title="4、总体说明"></a>4、总体说明</h2>将研发流程拆分为<strong>需求分析，开发，测试，版本发布，演示</strong> 5个阶段<br>每个阶段包含<strong>步骤，结果，规范，操作</strong>4个维度<br><em>步骤</em>: 该阶段需要完成的宏观工作。<br><em>结果</em>: 该阶段输出的交付产物。<br><em>规范</em>: 该阶段涉及到的具体规范。<br><em>操作</em>: 该阶段涉及到的工具使用。</li>
+</ul>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img.png" alt="img.png"></p>
+<h1 id="二、-需求分析（里程碑的诞生）"><a href="#二、-需求分析（里程碑的诞生）" class="headerlink" title="二、 需求分析（里程碑的诞生）"></a>二、 需求分析（里程碑的诞生）</h1><h2 id="1、步骤"><a href="#1、步骤" class="headerlink" title="1、步骤"></a>1、步骤</h2><ol>
+<li><p>由PO和产品经理共同宣讲（PO主讲，产品经理补充）截止评估前的产品原型和功能定义</p>
+</li>
+<li><p>技术团队根据全量的功能&#x2F;需求，进行<strong>「任务地图」</strong>的评审和规划</p>
+<blockquote>
+<p>任务地图：一份截止评估前的产品全量功能&#x2F;需求的罗列，及对应的每个任务的具体所需工时。</p>
+</blockquote>
+</li>
+<li><p>由PO来进行里程碑（任务地图的子集）划分，及团队对于里程碑任务的确定</p>
+<blockquote>
+<p>PO（Project Owner）：团队的记录者、会议纪要责任人、团队技术开发的润滑剂，通常由后端为主的角色担任。<br>主要职责：</p>
+<ul>
+<li>完全理解产品定义、产品价值、产品业务逻辑</li>
+<li>与产品经理交涉技术的可行性（可行性低的需求，有否决权）</li>
+<li>站会的组织者，开发环节中里程碑的主要责任人（制定、评审、初验）</li>
+<li>产品与团队之间业务逻辑的最终解释人</li>
+<li>任务地图的最终解释人</li>
+</ul>
+</blockquote>
+</li>
+<li><p>材料上传到团队每一个人都能看到的位置</p>
+<h2 id="2、结果"><a href="#2、结果" class="headerlink" title="2、结果"></a>2、结果</h2><p><strong>「任务地图」（任何团队认可并可描述清晰任务地图的文件载体，doc、excel、rp、txt……）</strong></p>
+<h2 id="3、规范"><a href="#3、规范" class="headerlink" title="3、规范"></a>3、规范</h2></li>
+<li><p>任务地图格式（参考）</p>
+<ol>
+<li>功能描述</li>
+</ol>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>需求编号（与产品经理的需求编号一致）</th>
+<th>主要模块</th>
+<th>功能</th>
+<th>具体任务（case）</th>
+<th>所需工时</th>
+<th>备注（参数）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>01</td>
+<td>注册</td>
+<td>表单</td>
+<td>手机号校验</td>
+<td>3天</td>
+<td>限制数字范围</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>验证码（与描述1任务相互依赖）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>提交</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3天</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>…</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ol start="2">
+<li><p>性能需求（具体情况具体分析）</p>
+<ol>
+<li>tps&#x2F;qps</li>
+<li>rt</li>
+<li>throughout<h2 id="4、操作"><a href="#4、操作" class="headerlink" title="4、操作"></a>4、操作</h2>将<strong>「任务地图」</strong>转化成相关文档载体，存放在团队成员人人可见的共享位置。<h1 id="三、-开发"><a href="#三、-开发" class="headerlink" title="三、 开发"></a>三、 开发</h1><h2 id="1、步骤-1"><a href="#1、步骤-1" class="headerlink" title="1、步骤"></a>1、步骤</h2></li>
+</ol>
+</li>
+<li><p>总体设计</p>
+<ol>
+<li>在该阶段确定总体结构和软件开发架构,输出架构图</li>
+<li>确定软件模块结构</li>
+<li>确定模块之间交互的协议</li>
+</ol>
+</li>
+<li><p>软件实现</p>
+<ol>
+<li>开发人员围绕编码这项活动开展devops流程，将开发，测试，集成等活动通过持续集成流水线自动串联起来。</li>
+</ol>
+</li>
+<li><p>软件测试</p>
+<ol>
+<li>测试应持续覆盖到每次迭代中的需求分析、软件设计、软件编码、功能对接、软件测试、交付、运营维护，原则上应遵循敏捷开发中的Devops持续测试模型</li>
+</ol>
+</li>
+</ol>
+<h2 id="2、结果-1"><a href="#2、结果-1" class="headerlink" title="2、结果"></a>2、结果</h2><ol>
+<li><p>输出《总体设计》文档，归档在当前项目的仓库中（仓库名：xxx-doc）</p>
+</li>
+<li><p>输出软件新特性通过基本用例（指新特性的基础功能）测试的软件</p>
+<h2 id="3、规范-1"><a href="#3、规范-1" class="headerlink" title="3、规范"></a>3、规范</h2></li>
+<li><p>工具</p>
+</li>
+</ol>
+<p>开发过程中的工具请统一使用公共资源，详见公共开发资源（<a href="https://cosmobdai.yuque.com/cosmobdai/xpk2lg/ztzxif#GdG1">https://cosmobdai.yuque.com/cosmobdai/xpk2lg/ztzxif#GdG1</a>）</p>
+<ol start="2">
+<li>devops流水线模板</li>
+</ol>
+<p>每个项目需要实现自己的devops流程，模板参考</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 流程必须包含以下阶段,个性化项目可以增加特定的阶段</span><br><span class="line">stages:</span><br><span class="line">  - prepare</span><br><span class="line">  - test</span><br><span class="line">  - check</span><br><span class="line">  - build</span><br><span class="line">  - deploy</span><br><span class="line"></span><br><span class="line"># 准备阶段: 获取最新代码等流水线准备工作,git用户使用公共的builder账号</span><br><span class="line">prepare:</span><br><span class="line">  image: harbor.bdai.cosmo.com:8888/cosmo_bdai/docker:20.10.9-git</span><br><span class="line">  stage: prepare</span><br><span class="line">  script:</span><br><span class="line">    - git clone http://builder:12345678@192.168.5.121:8999/rd/ddc_backend.git target</span><br><span class="line">  cache:</span><br><span class="line">    key: $&#123;CI_PIPELINE_ID&#125;</span><br><span class="line">    paths: </span><br><span class="line">      - target/</span><br><span class="line"></span><br><span class="line"># 测试阶段: 运行代码的单元测试</span><br><span class="line">tests:</span><br><span class="line">  image: harbor.bdai.cosmo.com:8888/cosmo_bdai/python:3.8-slim-gcc</span><br><span class="line">  stage: test</span><br><span class="line">  only:</span><br><span class="line">    changes:</span><br><span class="line">      - ddc_api/**/*</span><br><span class="line">      - ddc_api/*</span><br><span class="line">      - tests/*</span><br><span class="line">  script:</span><br><span class="line">    - cd target</span><br><span class="line">    - pip install --no-cache-dir  -r requirements.txt -i http://192.168.5.121:8081/repository/bdai-pypi/simple --trusted-host 192.168.5.121 </span><br><span class="line">    - pytest</span><br><span class="line">  cache:</span><br><span class="line">    key: $&#123;CI_PIPELINE_ID&#125;</span><br><span class="line">    paths: </span><br><span class="line">      - target/</span><br><span class="line">      </span><br><span class="line"># 检查阶段: 代码静态检查，通过sonar实现</span><br><span class="line">check:</span><br><span class="line">  image: harbor.bdai.cosmo.com:8888/cosmo_bdai/docker:20.10.9-git</span><br><span class="line">  stage: check</span><br><span class="line">  only:</span><br><span class="line">    changes:</span><br><span class="line">      - ddc_api/**/*</span><br><span class="line">      - ddc_api/*</span><br><span class="line">      - tests/*</span><br><span class="line">  script:</span><br><span class="line">    - cd target</span><br><span class="line">    - docker run --rm  harbor.bdai.cosmo.com:8888/cosmo_bdai/sonar-scanner-cli:4.6  sonar-scanner -Dsonar.projectKey=ddc_backend -Dsonar.sources=.  -Dsonar.host.url=http://192.168.5.121:9000 -Dsonar.login=9152432e16396f6d8da1661d0699ac3c0325d21d </span><br><span class="line">  cache:</span><br><span class="line">    key: $&#123;CI_PIPELINE_ID&#125;</span><br><span class="line">    paths: </span><br><span class="line">      - target/  </span><br><span class="line"></span><br><span class="line"># 构建阶段: 将项目构建成docker镜像,每天触发一次</span><br><span class="line">build:</span><br><span class="line">  image: harbor.bdai.cosmo.com:8888/cosmo_bdai/docker:20.10.9-git</span><br><span class="line">  stage: build</span><br><span class="line">  rules:</span><br><span class="line">    - if: $CI_PIPELINE_SOURCE == &quot;schedule&quot;</span><br><span class="line">  script:</span><br><span class="line">    - cd target/build</span><br><span class="line">    - docker build --network=host . -t harbor.bdai.cosmo.com:8888/cosmo_bdai/ddc_api:0.0.1</span><br><span class="line">    - docker login -u dev -p Dev12345 harbor.bdai.cosmo.com:8888</span><br><span class="line">    - docker push harbor.bdai.cosmo.com:8888/cosmo_bdai/ddc_api:0.0.1</span><br><span class="line">  cache:</span><br><span class="line">    key: $&#123;CI_PIPELINE_ID&#125;</span><br><span class="line">    paths: </span><br><span class="line">      - target/</span><br><span class="line"></span><br><span class="line"># 部署阶段: 将构建的镜像自动部署至测试环境,每天触发一次</span><br><span class="line">deploy:</span><br><span class="line">  image: harbor.bdai.cosmo.com:8888/cosmo_bdai/docker:20.10.9-git</span><br><span class="line">  rules:</span><br><span class="line">    - if: $CI_PIPELINE_SOURCE == &quot;schedule&quot;</span><br><span class="line">  stage: deploy</span><br><span class="line">  script:</span><br><span class="line">    - docker stop ddc_api || true &amp;&amp; docker rm ddc_api || true</span><br><span class="line">    - docker run --rm  -d  -p 5000:5000 --name ddc_api harbor.bdai.cosmo.com:8888/cosmo_bdai/ddc_api:0.0.1</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>分支管理</li>
+</ol>
+<p>使用GitHub flow进行分支管理。只存在一个长期分支master，项目的最新版本在这个主分支上，每个人进行开发的时候将主分支pull到本地，在此基础上创建临时的功能分支进行开发。</p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_1.png" alt="img_1.png"></p>
+<p>多版本开发</p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_2.png" alt="img_2.png"></p>
+<ol start="4">
+<li>提交规范<ol>
+<li>comment规范<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;type&gt;:&lt;description&gt; &lt;#issue No.&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">issue No.: gitlab的issue号用于关联提交，追溯问题</span><br><span class="line">type只能是以下几类</span><br><span class="line">	&#x27;feature:&#x27;   #新功能feature</span><br><span class="line">	&#x27;update:&#x27; #在feature内修改</span><br><span class="line">  &#x27;fix:&#x27;  #修补bug</span><br><span class="line">  &#x27;docs:&#x27;  #文档</span><br><span class="line">  &#x27;style:&#x27; #格式化，不影响代码运行的变动</span><br><span class="line">  &#x27;refactor:&#x27; #重构</span><br><span class="line">  &#x27;pref:&#x27;  #性能优化</span><br><span class="line">  &#x27;test:&#x27;  #增加测试</span><br><span class="line">  &#x27;chore:&#x27;  #构建过程或辅助工具的变动</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+参考如下:</li>
+</ol>
+</li>
+</ol>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_3.png" alt="img_3.png"></p>
+<ol start="2">
+<li>分支命名规范</li>
+</ol>
+<p>3种临时分支（feature，bug，release）<br>分支命名请采用这种形式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;&#x27;分支类别_&#x27;&gt;&lt;#issue No.&gt;</span><br></pre></td></tr></table></figure>
+<p>例如：feature_#2<br>其中&lt;#issue No.&gt;的获取方式是进入下图的这个页面：</p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_4.png" alt="img_4.png"></p>
+<ol start="3">
+<li>换行符规范（todo:通过gitlab hook自动校验）</li>
+</ol>
+<p>使用 LF 为换行符</p>
+<ol start="4">
+<li>文件编码规范</li>
+</ol>
+<p>使用utf8作为文件编码</p>
+<ol start="5">
+<li><p>人员角色分配规范</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">保证相关人员获取最小权限</span><br><span class="line">maintainer: 拥有项目的最高权限</span><br><span class="line">developer: 开发者权限</span><br><span class="line">reporter: 报告者权限</span><br><span class="line">guest: 访客权限</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>issue状态规范</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">open: 待领取的任务</span><br><span class="line">doing: 正在执行的任务</span><br><span class="line">testing: 正在测试的任务</span><br><span class="line">close: 完成的任务</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>issue规范</p>
+<ol>
+<li><p>issue创建分解的建议（与任务地图中的case对应）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 将issue理解为一个个开发任务</span><br><span class="line">2. issue的粒度不易过大或过小，以满足一个可测试的功能点为宜</span><br><span class="line">3. issue的创建也要考虑相关的代码提交，一个issue不宜涉及过多或过少的代码改动</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>命名</p>
+</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;type&gt;-&lt;简短描述&gt;</span><br><span class="line"></span><br><span class="line">type的类别：</span><br><span class="line">设计: 设计相关</span><br><span class="line">文档: 文档</span><br><span class="line">工程: 流水线构建，打包等工程化相关</span><br><span class="line">开发: 开发相关</span><br><span class="line">bug: bug修复</span><br><span class="line">测试: 测试</span><br><span class="line">讨论: 问题沟通</span><br><span class="line">调研: 调研</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">例如:</span><br><span class="line">开发-获取用户列表接口</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>验证方法</li>
+</ol>
+<p>需要在issue中备注对完成的任务提供验证方法，模板如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">验证方法:</span><br><span class="line">预期: &#123;&quot;id&quot;:1,&quot;name&quot;:&quot;gaoyuan&quot;&#125;</span><br><span class="line">操作:调用接口 curl -XGET http://ip:5000/users/1</span><br><span class="line">结果: &#123;&quot;id&quot;:1,&quot;name&quot;:&quot;gaoyuan&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>截止日期（未进入里程碑前）</li>
+</ol>
+<p>需要对issue指定截止日期</p>
+<h2 id="4、操作-1"><a href="#4、操作-1" class="headerlink" title="4、操作"></a>4、操作</h2><p>以gitlab为中心开展完整的devops过程，<strong>该过程主要由PO完成！</strong></p>
+<ol>
+<li>创建新项目</li>
+</ol>
+<p>创建新项目<br>邀请对应人员进入项目<br>准备工作（配置runner，钉钉机器人，等等）</p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_5.png" alt="img_5.png"></p>
+<ol start="2">
+<li>定义milestone（2-4周）</li>
+</ol>
+<p>制定版本计划，并根据钉钉中的任务，定义版本中需要实现的功能<br><strong>里程碑名需与产品经理定义的版本号一致</strong></p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_6.png" alt="img_6.png"></p>
+<ol start="3">
+<li>创建issue</li>
+</ol>
+<p>将里程碑中的任务转换成对应的issue，并关联至milestone</p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_7.png" alt="img_7.png"></p>
+<ol start="4">
+<li>开发及测试</li>
+</ol>
+<p>开发人员在issue列表中认领任务，并完成相应的开发及测试工作，提交代码，触发ci流程，最终经测试人员验证通过后，关闭对应issue</p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_8.png" alt="img_8.png"></p>
+<p>开发人员可在boards页面直观的浏览任务状态</p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_9.png" alt="img_9.png"></p>
+<p>开发人员提交的代码以merge request的方式合并到主分支，这一过程接受代码审阅</p>
+<p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_10.png" alt="img_10.png"></p>
+<ol start="5">
+<li><p>todo</p>
+<h1 id="四、-测试"><a href="#四、-测试" class="headerlink" title="四、 测试"></a>四、 测试</h1><h2 id="1、步骤-2"><a href="#1、步骤-2" class="headerlink" title="1、步骤"></a>1、步骤</h2></li>
+<li><p>单元测试</p>
+</li>
+</ol>
+<p>单元测试是对软件基本组成单元进行的测试，在代码完成后由开发人员对模块、 组件、方法／函数单元进行测试</p>
+<ol start="2">
+<li>系统测试</li>
+</ol>
+<p>在真实的系统工作环境下，通过与系统的功能需求和性能需求作比较，对整个系统进行一系列的整体、有效性测试</p>
+<ol start="3">
+<li>验收测试</li>
+</ol>
+<p>验收测试始终要以双方确认的需求规格说明和技术合同为依据，确认各项需求是否得到满足，各项合同条款是否得到贯彻执行</p>
+<ol start="4">
+<li>回归测试</li>
+</ol>
+<p>对基本功能场景输出基本用例，测试需覆盖基本用例，保证新特性开发不影响原有已实现的功能</p>
+<h2 id="2、结果-2"><a href="#2、结果-2" class="headerlink" title="2、结果"></a>2、结果</h2><p>输出测试用例<br>输出测试报告</p>
+<h2 id="3、规范-2"><a href="#3、规范-2" class="headerlink" title="3、规范"></a>3、规范</h2><ol>
+<li>测试用例编写格式<table>
+<thead>
+<tr>
+<th><strong>项目名称</strong></th>
+<th><strong>功能模块</strong></th>
+<th><strong>用例编号</strong></th>
+<th><strong>功能特性</strong></th>
+<th><strong>测试目的</strong></th>
+<th><strong>预置条件</strong></th>
+<th><strong>测试人</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DDC-gate</td>
+<td>用户登录</td>
+<td>Sprint001-login-001</td>
+<td>用户通过用户名和密码进行登录</td>
+<td>验证是否拦截非法SQL注入登录</td>
+<td>数据库增删改查权限</td>
+<td>王子健</td>
+<td>无</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>操作描述</strong></th>
+<th><strong>输入数据</strong></th>
+<th><strong>期望结果</strong></th>
+<th><strong>实际结果</strong></th>
+<th><strong>是否通过</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>输入用户名，输入注入密码</td>
+<td>;and 1&#x3D;1</td>
+<td>显示”密码格式不对！</td>
+<td>显示”密码格式不对！</td>
+<td>是</td>
+</tr>
+</tbody></table>
+<ol start="2">
+<li>测试用例管理</li>
+</ol>
+<p>测试用例的管理、操作统一使用”禅道” 提交，参考公共开发资源（<a href="https://cosmobdai.yuque.com/cosmobdai/xpk2lg/ztzxif#GdG1">https://cosmobdai.yuque.com/cosmobdai/xpk2lg/ztzxif#GdG1</a>）</p>
+<h2 id="4、操作-2"><a href="#4、操作-2" class="headerlink" title="4、操作"></a>4、操作</h2><ol>
+<li>单元测试</li>
+</ol>
+<p>单元测试的审查集成至持续集成流水线中的<strong>测试</strong>，和<strong>检查</strong>两个阶段，规定使用SonarQube是管理代码质量一个开放平台，可以快速的定位代码中潜在的或者明显的错误了，原则上必须要有<strong>单元覆盖率</strong>检测。<br><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_11.png" alt="img_11.png"><br><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_12.png" alt="img_12.png"></p>
+<ol start="2">
+<li>集成测试</li>
+</ol>
+<p>系统测试融合至日常开发过程中，由于持续集成流水线的存在，理论上测试环境每日会自动部署前天开发新功能的程序包，可以通过交叉开发人员互相验证对应的issue。</p>
+<ol start="3">
+<li>系统测试</li>
+</ol>
+<p>当前里程碑中所有issue关闭，即进入版本发布前的系统测试阶段，测试环境部署安装包，测试人员根据测试用例完成系统测试验证。</p>
+<ol start="4">
+<li>验收测试</li>
+</ol>
+<p>验收测试采用”工单-验收-反馈”的方式进行，依托于中间的工单系统平台，客户在使用过程中发现的bug、缺陷、建议都需要通过工单提交到部门进行评审；待评审通过后进行系统功能的迭代。</p>
+<h1 id="五、-版本发布"><a href="#五、-版本发布" class="headerlink" title="五、 版本发布"></a>五、 版本发布</h1><h2 id="1、步骤-3"><a href="#1、步骤-3" class="headerlink" title="1、步骤"></a>1、步骤</h2><ol>
+<li>PO根据里程碑的详细信息进行初验</li>
+<li>相关文件归档<h2 id="2、结果-3"><a href="#2、结果-3" class="headerlink" title="2、结果"></a>2、结果</h2>输出产品安装包（镜像文件的docker harbor地址）<br>输出相关配套文档</li>
+</ol>
+<ul>
+<li>变更文档changelog</li>
+<li>功能示例</li>
+<li>白皮书</li>
+<li>用户手册</li>
+<li>安装部署文档</li>
+</ul>
+<h2 id="3、规范-3"><a href="#3、规范-3" class="headerlink" title="3、规范"></a>3、规范</h2><ol>
+<li><p>版本号定义</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[产品名称_V]+[A.B.C]</span><br><span class="line">[A.B.C]:	主版本号.次版本号.修订号</span><br><span class="line">A.	主版本号: 做了不向前兼容的修改（软件重写）</span><br><span class="line">B.	副版本号: 做了向下兼容的功能性新增（新功能）</span><br><span class="line">C.	修订号:   做了向下兼容的问题修正（bug修改）</span><br><span class="line"></span><br><span class="line">例如：ddc_V1.0.0</span><br></pre></td></tr></table></figure>
+<h2 id="4、操作-3"><a href="#4、操作-3" class="headerlink" title="4、操作"></a>4、操作</h2><p>通过gitlab 的release功能实现版本发布功能<br><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_13.png" alt="img_13.png"><br>上传配套文档<br><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_14.png" alt="img_14.png"></p>
+<h1 id="六、演示"><a href="#六、演示" class="headerlink" title="六、演示"></a>六、演示</h1><h2 id="1、-步骤"><a href="#1、-步骤" class="headerlink" title="1、 步骤"></a>1、 步骤</h2></li>
+<li><p>项目开发的每个周期结束于演示</p>
+</li>
+<li><p>产品负责人召集相关人员，进行统一的演示</p>
+</li>
+<li><p>记录相关问题，反馈意见用于下次迭代</p>
+</li>
+</ol>
+<h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><h2 id="1、-docker镜像制作规范"><a href="#1、-docker镜像制作规范" class="headerlink" title="1、 docker镜像制作规范"></a>1、 docker镜像制作规范</h2><p>参考<a href="https://cosmobdai.yuque.com/cosmobdai/mml7tt/ahd9m0">docker镜像制作规范</a></p>
+<h2 id="2、-整体流程参考图"><a href="#2、-整体流程参考图" class="headerlink" title="2、 整体流程参考图"></a>2、 整体流程参考图</h2><p><img src="/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90-BD-AI)%20V1.5/img_15.png" alt="img_15.png"></p>
+]]></content>
+      <tags>
+        <tag>研发规范</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>BD&amp;AI 创研中心 居家办公不完全指南</title>
     <url>/2022/05/24/BD-AI-%E5%88%9B%E7%A0%94%E4%B8%AD%E5%BF%83-%E5%B1%85%E5%AE%B6%E5%8A%9E%E5%85%AC%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">本指南有效期 2022-5-24 ~ 2022-5-27</span><br></pre></td></tr></table></figure>
@@ -172,8 +602,8 @@
 <p>你有VPN，你想学习，你想提升自己，你想用现在已有的活提升自己！</p>
 </blockquote>
 <p>虽然你没楼上的小伙伴们意识强烈，但你也是一个向上之人。推进的工作和内容每天晚6点前，以日报&#x2F;产出物（代码、文档等多种产出物）的形式向对应组的钉钉群里发日报即可。<br>操作如下：</p>
-<p><a href="https://imgtu.com/i/XCoRSI"><img src="https://s1.ax1x.com/2022/05/24/XCoRSI.png" alt="XCoRSI.png"></a></p>
-<p><a href="https://imgtu.com/i/XCo5m8"><img src="https://s1.ax1x.com/2022/05/24/XCo5m8.png" alt="XCo5m8.png"></a></p>
+<!-- 注释：原有的外部图片链接已删除，因为图片托管服务不可用 -->
+
 <h3 id="情形4：不想工作"><a href="#情形4：不想工作" class="headerlink" title="情形4：不想工作"></a>情形4：不想工作</h3><blockquote>
 <p>躺平! 虽然不是很鼓励大家躺平，但是这段时间从公司层面讲就是自己的假期时间，自己的假期时间做点自己喜欢的事为什么不好呢！</p>
 </blockquote>
