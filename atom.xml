@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>宇动源产业运营中心</title>
   
-  <subtitle>基础研发、应用创新、行业落地的三线合流中心</subtitle>
+  <subtitle>产业运营中心是公司连接技术与产业、研发与市场的关键枢纽。它整合资源，推动技术成果的 产业化、产品化与规模化落地，确保公司在重点行业与应用场景中形成稳定的市场竞争力。产业运营中心不仅仅是一个技术执行部门，而是公司战略落地的引擎，承担着把创新能力转化为可持续产业价值的使命。</subtitle>
   <link href="http://localhost/atom.xml" rel="self"/>
   
   <link href="http://localhost/"/>
-  <updated>2025-08-29T08:34:49.857Z</updated>
+  <updated>2025-08-29T08:58:07.416Z</updated>
   <id>http://localhost/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://localhost/2025/08/29/%E6%95%B0%E6%99%BA%E5%88%9B%E7%A0%94%E9%83%A8%20%E5%88%9B%E9%80%A0%E4%BB%B7%E5%80%BC%E6%80%9D%E8%80%83%E5%92%8C%E8%AE%A8%E8%AE%BA%E4%BC%9A%E8%AE%AE%20%E4%B8%BB%E8%A6%81%E8%AE%AE%E7%A8%8B/"/>
+    <id>http://localhost/2025/08/29/%E6%95%B0%E6%99%BA%E5%88%9B%E7%A0%94%E9%83%A8%20%E5%88%9B%E9%80%A0%E4%BB%B7%E5%80%BC%E6%80%9D%E8%80%83%E5%92%8C%E8%AE%A8%E8%AE%BA%E4%BC%9A%E8%AE%AE%20%E4%B8%BB%E8%A6%81%E8%AE%AE%E7%A8%8B/</id>
+    <published>2025-08-29T08:58:07.335Z</published>
+    <updated>2025-08-29T08:58:07.416Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>关于改造目前研发流程的分析与基础规范讨论</title>
