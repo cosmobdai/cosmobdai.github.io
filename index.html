@@ -67,6 +67,158 @@
     <h1 class="page-type-title"></h1>
     
     
+    <article id="post-新产品新功能执行过程参考（14天版）" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2025/09/19/%E6%96%B0%E4%BA%A7%E5%93%81%E6%96%B0%E5%8A%9F%E8%83%BD%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E5%8F%82%E8%80%83%EF%BC%8814%E5%A4%A9%E7%89%88%EF%BC%89/">新产品新功能执行过程参考（14天版）</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2025/09/19/%E6%96%B0%E4%BA%A7%E5%93%81%E6%96%B0%E5%8A%9F%E8%83%BD%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E5%8F%82%E8%80%83%EF%BC%8814%E5%A4%A9%E7%89%88%EF%BC%89/" class="article-date">
+  <time datetime="2025-09-19T03:04:53.000Z" itemprop="datePublished">2025-09-19</time>
+</a>
+      
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        
+      
+      
+      <h1 id="一、总体策略"><a href="#一、总体策略" class="headerlink" title="一、总体策略"></a>一、总体策略</h1><ol>
+<li><strong>只做一条价值链的“纵切 MVP”</strong>：围绕一个明确的用户场景，从网关到DB打穿一条链路，其余推迟。</li>
+<li><strong>技术债设“额度”而不是禁止</strong>：定义可接受的暂缓项与清偿窗口，超额立即停更还债。</li>
+<li><strong>先布“运行约束”，后写业务</strong>：灰度、回滚、日志&#x2F;指标&#x2F;追踪、配置与密钥治理先到位，再扩业务。</li>
+<li><strong>数据库“展开-收缩”双阶段</strong>：所有变更都走可回滚、向后兼容的迁移套路。</li>
+</ol>
+<h1 id="二、两周上线节拍（14天落地表）"><a href="#二、两周上线节拍（14天落地表）" class="headerlink" title="二、两周上线节拍（14天落地表）"></a>二、两周上线节拍（14天落地表）</h1><ul>
+<li><strong>D0（半天）</strong>：选型与骨架就位<ul>
+<li>脚手架：HTTP框架、ORM&#x2F;DB、任务队列、OpenAPI、集成测试框架、容器化、Helm&#x2F;Compose。</li>
+<li>内置中间件：请求ID、结构化日志、指标（&#x2F;metrics）、Trace、熔断限流。</li>
+</ul>
+</li>
+<li><strong>D1-D2</strong>：运行约束最小集<ul>
+<li>金丝雀发布、自动回滚触发条件（错误率&#x2F;延时&#x2F;P99）、配置中心&#x2F;密钥托管、只读健康检查与就绪探针。</li>
+</ul>
+</li>
+<li><strong>D3</strong>：契约先行<ul>
+<li>对外OpenAPI（仅MVP所需3–5个端点）、对内事件&#x2F;消息契约、DDL初版（只做支撑MVP的表&#x2F;索引）。</li>
+</ul>
+</li>
+<li><strong>D4-D6</strong>：纵切功能打通<ul>
+<li>控制层→领域层→适配层的最小路径，外部依赖先用“假适配器&#x2F;沙盒环境”。</li>
+<li>写两类测试：契约测试（对外稳定）、端到端冒烟（打穿链路）。</li>
+</ul>
+</li>
+<li><strong>D7</strong>：基线性能与容量<ul>
+<li>关键接口基准：P50&#x2F;P95&#x2F;P99、QPS、错误率；压到“上线目标×1.5”。</li>
+</ul>
+</li>
+<li><strong>D8</strong>：安全最小集<ul>
+<li>鉴权（token&#x2F;AK&#x2F;SK）、RBAC简版、SAST&#x2F;SCA、SBOM产出、密钥泄漏扫描。</li>
+</ul>
+</li>
+<li><strong>D9-D10</strong>：灰度实战<ul>
+<li>10%→30%→50%逐级放量，监控面板就绪，回滚脚本演练。</li>
+</ul>
+</li>
+<li><strong>D11-D12</strong>：债务盘点与文档<ul>
+<li>列出技术债（分类与偿债窗口），形成ADR简版，Runbook（告警→定位→修复）。</li>
+</ul>
+</li>
+<li><strong>D13-D14</strong>：生产放量与复盘<ul>
+<li>全量放开或维持50%视KPI；产出AAR复盘与下一迭代Backlog。</li>
+</ul>
+</li>
+</ul>
+<h1 id="三、最小质量底线（只保留真正挡雷的几项）"><a href="#三、最小质量底线（只保留真正挡雷的几项）" class="headerlink" title="三、最小质量底线（只保留真正挡雷的几项）"></a>三、最小质量底线（只保留真正挡雷的几项）</h1><ul>
+<li><strong>可用性</strong>：&#x2F;health（liveness）与&#x2F;ready（readiness）分离。</li>
+<li><strong>可观测</strong>：日志（JSON结构化，带traceId&#x2F;spanId&#x2F;userId）、指标（QPS、错误率、延时、池化连接数）、Trace（入口→DB&#x2F;缓存&#x2F;下游）。</li>
+<li><strong>测试</strong>：契约测试必有、E2E冒烟必跑、核心域单测覆盖≥70%。</li>
+<li><strong>发布</strong>：金丝雀 + 自动回滚阈值（例如5分钟内错误率&gt;1%或P99&gt;800ms）。</li>
+<li><strong>安全</strong>：SAST&#x2F;SCA阻断高危；密钥不得写入镜像&#x2F;代码。</li>
+<li><strong>数据</strong>：Migration脚本与回滚脚本成对提交。</li>
+</ul>
+<h1 id="四、技术债治理-x3D-“债务预算-清偿节拍”"><a href="#四、技术债治理-x3D-“债务预算-清偿节拍”" class="headerlink" title="四、技术债治理&#x3D;“债务预算 + 清偿节拍”"></a>四、技术债治理&#x3D;“债务预算 + 清偿节拍”</h1><ul>
+<li><strong>债务分类</strong><br>1）结构性：分层不清、循环依赖、耦合外部SDK；<br>2）数据性：无契约、字段语义不清、无版本；<br>3）运行性：无指标、无回滚、手工配置；<br>4）代码性：无测试、临时补丁、重复逻辑。</li>
+<li><strong>债务预算</strong>：每迭代固定10–20%容量用于还债；<strong>超出预算即冻结新增特性</strong>，优先清影响回滚&#x2F;可观测&#x2F;数据兼容的债。</li>
+<li><strong>清偿节拍</strong>：每周五20分钟债务例会，更新清单与ADR，确保滚动消项。</li>
+</ul>
+<h1 id="五、数据库“展开-收缩（Expand-Contract）”模板"><a href="#五、数据库“展开-收缩（Expand-Contract）”模板" class="headerlink" title="五、数据库“展开-收缩（Expand-Contract）”模板"></a>五、数据库“展开-收缩（Expand-Contract）”模板</h1><ol>
+<li><strong>Expand</strong>：加新列&#x2F;新表（可空&#x2F;默认）、双写或读路由支持新旧并存、代码先适配新旧。</li>
+<li><strong>Migrate</strong>：后台作业迁移历史数据，监控校验比对（条数&#x2F;校验和&#x2F;抽样业务校验）。</li>
+<li><strong>Flip</strong>：切读新结构，监控稳定后停止旧写。</li>
+<li><strong>Contract</strong>：下版本移除旧列&#x2F;旧表&#x2F;旧路径。<br>→ 每步都可回滚；Migration与回滚脚本同PR提交。</li>
+</ol>
+<h1 id="六、架构与代码组织（能跑就行的“整洁最小版”）"><a href="#六、架构与代码组织（能跑就行的“整洁最小版”）" class="headerlink" title="六、架构与代码组织（能跑就行的“整洁最小版”）"></a>六、架构与代码组织（能跑就行的“整洁最小版”）</h1><ul>
+<li><strong>分层</strong>：<code>interfaces</code>（REST&#x2F;gRPC&#x2F;订阅者）→ <code>application</code>（用例服务、事务编排）→ <code>domain</code>（实体&#x2F;值对象&#x2F;仓储接口&#x2F;领域服务）→ <code>infrastructure</code>（DB&#x2F;Cache&#x2F;消息&#x2F;第三方适配器）。</li>
+<li><strong>依赖方向</strong>：只指向内核（domain），infra 适配 domain 定义的接口。</li>
+<li><strong>配置</strong>：严格分环境与密钥托管；任何“临时开关”都走Feature Toggle并登记到债务清单。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/service</span><br><span class="line">  /interfaces     # controllers, DTO, serializers</span><br><span class="line">  /application    # usecases, orchestrators</span><br><span class="line">  /domain         # entities, value-objects, repo-ports</span><br><span class="line">  /infrastructure # repo-impl, clients, mq, db, cache</span><br><span class="line">  /migrations</span><br><span class="line">  /scripts        # run, rollback, seed, smoke</span><br><span class="line">  /observability  # dashboards, alerts rules</span><br></pre></td></tr></table></figure>
+
+<h1 id="七、CI-x2F-CD流水（最小可用范式）"><a href="#七、CI-x2F-CD流水（最小可用范式）" class="headerlink" title="七、CI&#x2F;CD流水（最小可用范式）"></a>七、CI&#x2F;CD流水（最小可用范式）</h1><ul>
+<li><strong>分支</strong>：trunk-based + 短分支，PR ≤ 300 行。</li>
+<li><strong>流水</strong>：Lint→单测→契约测试→镜像→SCA→部署到灰度→冒烟→基线压测（关键端点）→人工“放量阈值”按钮。</li>
+<li><strong>阻断条件</strong>：高危依赖&#x2F;密钥泄漏&#x2F;覆盖率跌破阈值&#x2F;基线回归。</li>
+<li><strong>产物</strong>：镜像含SBOM；版本号&#x3D;日期+短SHA；OpenAPI自动发布到API门户。</li>
+</ul>
+<h1 id="八、上线验收清单（复用即可）"><a href="#八、上线验收清单（复用即可）" class="headerlink" title="八、上线验收清单（复用即可）"></a>八、上线验收清单（复用即可）</h1><ul>
+<li>业务：MVP全链路打通，关键KPI可观测（下单成功率等）。</li>
+<li>可靠：SLO页签、错误预算、三类告警（可用性&#x2F;延迟&#x2F;错误率）都能触发。</li>
+<li>安全：Token鉴权、角色矩阵、审计日志关键操作落账。</li>
+<li>数据：DDL与回滚脚本；数据契约公布；血缘记录更新。</li>
+<li>运维：Runbook三条典型故障演练通过；回滚演练一次成功。</li>
+<li>文档：ADR编号、API文档、依赖清单、容量与成本估算表。</li>
+</ul>
+<h1 id="九、技术债可控的“加速器”（允许你赶工的合理捷径）"><a href="#九、技术债可控的“加速器”（允许你赶工的合理捷径）" class="headerlink" title="九、技术债可控的“加速器”（允许你赶工的合理捷径）"></a>九、技术债可控的“加速器”（允许你赶工的合理捷径）</h1><ul>
+<li><strong>假适配器</strong>：对昂贵或易变更的外部依赖，先上In-Memory&#x2F;文件Mock，接口不变，迭代再替换。</li>
+<li><strong>配置化开关</strong>：对“争议逻辑&#x2F;风控策略”上Feature Toggle，默认关，灰度时逐步打开。</li>
+<li><strong>限栈开发</strong>：MVP阶段只允许使用“黄金路径”内置组件；拒绝新中间件入场（列入债务评估）。</li>
+<li><strong>只做读模型优化</strong>：性能不足时先加缓存&#x2F;索引与读写分离，避免提前做复杂CQRS或分库分表。</li>
+<li><strong>延后复杂一致性</strong>：先用Outbox+重试保障“至少一次”，真正幂等与去重放到下一迭代清偿。</li>
+</ul>
+<h1 id="十、示例Backlog（MVP与债务分栏）"><a href="#十、示例Backlog（MVP与债务分栏）" class="headerlink" title="十、示例Backlog（MVP与债务分栏）"></a>十、示例Backlog（MVP与债务分栏）</h1><ul>
+<li><strong>MVP必须</strong>：OpenAPI-3端点、下游支付&#x2F;风控假适配器、订单表+索引、金丝雀、回滚脚本、指标与Trace、E2E冒烟。</li>
+<li><strong>下一迭代</strong>：支付真实对接、幂等键&#x2F;去重、异步补偿事务、SLO提升至99.9%、缓存冷启动策略。</li>
+<li><strong>技术债</strong>：DTO复用领域模型→拆分、重复的输入校验→抽公共库、手工告警配置→IaC化。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://localhost/2025/09/19/%E6%96%B0%E4%BA%A7%E5%93%81%E6%96%B0%E5%8A%9F%E8%83%BD%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E5%8F%82%E8%80%83%EF%BC%8814%E5%A4%A9%E7%89%88%EF%BC%89/" data-id="cmfq9cqy40006u8fyc8vm6pnw" class="article-share-link">
+        Share
+      </a>
+      
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%84%E8%8C%83/" rel="tag">规范</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
     <article id="post-关于改造目前研发流程的分析与基础规范讨论" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -183,7 +335,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://localhost/2025/08/29/%E5%85%B3%E4%BA%8E%E6%94%B9%E9%80%A0%E7%9B%AE%E5%89%8D%E7%A0%94%E5%8F%91%E6%B5%81%E7%A8%8B%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E5%9F%BA%E7%A1%80%E8%A7%84%E8%8C%83%E8%AE%A8%E8%AE%BA/" data-id="cmewn26l10008befy31e39ygi" class="article-share-link">
+      <a data-url="http://localhost/2025/08/29/%E5%85%B3%E4%BA%8E%E6%94%B9%E9%80%A0%E7%9B%AE%E5%89%8D%E7%A0%94%E5%8F%91%E6%B5%81%E7%A8%8B%E7%9A%84%E5%88%86%E6%9E%90%E4%B8%8E%E5%9F%BA%E7%A1%80%E8%A7%84%E8%8C%83%E8%AE%A8%E8%AE%BA/" data-id="cmfq9cqy30005u8fyax8t2319" class="article-share-link">
         Share
       </a>
       
@@ -628,7 +780,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://localhost/2025/08/29/%E7%A0%94%E5%8F%91%E5%9F%BA%E7%A1%80%E8%A7%84%E8%8C%83V2-0/" data-id="cmewn26l10009befy4crgbyks" class="article-share-link">
+      <a data-url="http://localhost/2025/08/29/%E7%A0%94%E5%8F%91%E5%9F%BA%E7%A1%80%E8%A7%84%E8%8C%83V2-0/" data-id="cmfq9cqy6000au8fy0gxs7stc" class="article-share-link">
         Share
       </a>
       
@@ -711,7 +863,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://localhost/2023/09/12/IDB%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%96%87%E6%A1%A3/" data-id="cmewn26kv0003befy7vsy8vb5" class="article-share-link">
+      <a data-url="http://localhost/2023/09/12/IDB%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%96%87%E6%A1%A3/" data-id="cmfq9cqy00003u8fya3jdhhhg" class="article-share-link">
         Share
       </a>
       
@@ -808,7 +960,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://localhost/2023/02/13/DSN%20SDK%20for%20Java/" data-id="cmewn26kp0001befygvp5bu26" class="article-share-link">
+      <a data-url="http://localhost/2023/02/13/DSN%20SDK%20for%20Java/" data-id="cmfq9cqxx0001u8fy602hfy50" class="article-share-link">
         Share
       </a>
       
@@ -1271,7 +1423,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://localhost/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90)%20V1.5/" data-id="cmewn26l3000bbefygcta7ouy" class="article-share-link">
+      <a data-url="http://localhost/2022/09/13/%E7%A0%94%E5%8F%91%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83(%E5%AE%87%E5%8A%A8%E6%BA%90)%20V1.5/" data-id="cmfq9cqy40007u8fy9158czfe" class="article-share-link">
         Share
       </a>
       
