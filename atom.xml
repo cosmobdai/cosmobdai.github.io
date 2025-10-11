@@ -6,7 +6,7 @@
   <link href="http://localhost/atom.xml" rel="self"/>
   
   <link href="http://localhost/"/>
-  <updated>2025-09-29T01:25:10.759Z</updated>
+  <updated>2025-10-11T09:20:47.948Z</updated>
   <id>http://localhost/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>钝化机制概念定义</title>
+    <link href="http://localhost/2025/10/11/%E9%92%9D%E5%8C%96%E6%9C%BA%E5%88%B6%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89/"/>
+    <id>http://localhost/2025/10/11/%E9%92%9D%E5%8C%96%E6%9C%BA%E5%88%B6%E6%A6%82%E5%BF%B5%E5%AE%9A%E4%B9%89/</id>
+    <published>2025-10-11T09:20:31.000Z</published>
+    <updated>2025-10-11T09:20:47.948Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、概念层解释&quot;&gt;&lt;a href=&quot;#一、概念层解释&quot; class=&quot;headerlink&quot; title=&quot;一、概念层解释&quot;&gt;&lt;/a&gt;一、概念层解释&lt;/h2&gt;&lt;h3</summary>
+        
+      
+    
+    
+    
+    
+    <category term="技术" scheme="http://localhost/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>逆钝化机制设计方案</title>
+    <link href="http://localhost/2025/10/11/%E9%80%86%E9%92%9D%E5%8C%96%E6%9C%BA%E5%88%B6%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/"/>
+    <id>http://localhost/2025/10/11/%E9%80%86%E9%92%9D%E5%8C%96%E6%9C%BA%E5%88%B6%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</id>
+    <published>2025-10-11T09:10:16.000Z</published>
+    <updated>2025-10-11T09:17:26.730Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;CWS（创意空间）的逆钝化机制设计方案&quot;&gt;&lt;a href=&quot;#CWS（创意空间）的逆钝化机制设计方案&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="技术" scheme="http://localhost/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>私有化部署硬件指南</title>
