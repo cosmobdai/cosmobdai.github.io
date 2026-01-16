@@ -6,7 +6,7 @@
   <link href="http://localhost/atom.xml" rel="self"/>
   
   <link href="http://localhost/"/>
-  <updated>2025-10-11T09:58:56.005Z</updated>
+  <updated>2026-01-16T06:55:56.464Z</updated>
   <id>http://localhost/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>配电室数据集说明</title>
+    <link href="http://localhost/2026/01/16/%E9%85%8D%E7%94%B5%E5%AE%A4%E6%95%B0%E6%8D%AE%E9%9B%86%E8%AF%B4%E6%98%8E/"/>
+    <id>http://localhost/2026/01/16/%E9%85%8D%E7%94%B5%E5%AE%A4%E6%95%B0%E6%8D%AE%E9%9B%86%E8%AF%B4%E6%98%8E/</id>
+    <published>2026-01-16T06:54:42.000Z</published>
+    <updated>2026-01-16T06:55:56.464Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;数据取自2025年一个中小型工业&amp;#x2F;商业配电室在一整年内的运行情况，采样频率为每15分钟一次（这是电力行业的标准频率）。&lt;/p&gt;
+&lt;h3 id=&quot;1-数据概览&quot;&gt;&lt;a href=&quot;#1-数据概览&quot; class=&quot;headerlink&quot; title=&quot;1.</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>历史上的认知退化：钝化例子</title>

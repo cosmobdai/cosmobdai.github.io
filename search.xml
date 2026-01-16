@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>配电室数据集说明</title>
+    <url>/2026/01/16/%E9%85%8D%E7%94%B5%E5%AE%A4%E6%95%B0%E6%8D%AE%E9%9B%86%E8%AF%B4%E6%98%8E/</url>
+    <content><![CDATA[<p>数据取自2025年一个中小型工业&#x2F;商业配电室在一整年内的运行情况，采样频率为每15分钟一次（这是电力行业的标准频率）。</p>
+<h3 id="1-数据概览"><a href="#1-数据概览" class="headerlink" title="1. 数据概览"></a>1. 数据概览</h3><p>数据集保存为 <code>power_distribution_data.csv</code>。</p>
+<table>
+<thead>
+<tr>
+<th>字段名称</th>
+<th>单位</th>
+<th>说明</th>
+<th>在研究中的作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>timestamp</strong></td>
+<td>-</td>
+<td>时间戳（15分钟粒度）</td>
+<td>时序特征提取（小时、周、节假日）</td>
+</tr>
+<tr>
+<td><strong>active_power_kW</strong></td>
+<td>kW</td>
+<td><strong>有功功率</strong></td>
+<td>负荷预测的目标变量；异常检测的核心指标</td>
+</tr>
+<tr>
+<td><strong>reactive_power_kVAR</strong></td>
+<td>kVAR</td>
+<td>无功功率</td>
+<td>用于分析功率因数变化及无功补偿需求</td>
+</tr>
+<tr>
+<td><strong>voltage_V</strong></td>
+<td>V</td>
+<td>电压（模拟220V波动）</td>
+<td>异常检测的参考指标（如欠压、过压识别）</td>
+</tr>
+<tr>
+<td><strong>current_A</strong></td>
+<td>A</td>
+<td>电流</td>
+<td>负荷关联指标，可用于多变量模型</td>
+</tr>
+<tr>
+<td><strong>power_factor</strong></td>
+<td>-</td>
+<td>功率因数</td>
+<td>设备运行效率评估</td>
+</tr>
+<tr>
+<td><strong>temperature_C</strong></td>
+<td>℃</td>
+<td>环境温度</td>
+<td><strong>重要外部变量</strong>，与空调&#x2F;加热负荷强相关</td>
+</tr>
+<tr>
+<td><strong>anomaly_label</strong></td>
+<td>-</td>
+<td>异常标签 (0&#x2F;1)</td>
+<td>用于验证异常检测算法的准确性</td>
+</tr>
+</tbody></table>
+<h3 id="2-业务说明"><a href="#2-业务说明" class="headerlink" title="2. 业务说明"></a>2. 业务说明</h3><p>字段特征说明：</p>
+<ul>
+<li><strong>周期性：</strong> 每天有两个用电高峰（上午10点及晚上20点左右），周末负荷显著低于工作日。</li>
+<li><strong>季节性：</strong> 模拟了夏季和冬季的高负荷（由于空调或供暖）。</li>
+<li><strong>异常模式（用于异常检测研究）：</strong></li>
+<li><strong>突刺（Spikes）：</strong> 模拟大功率设备瞬间启动或短路故障。</li>
+<li><strong>上下文异常（Night Leakage）：</strong> 模拟凌晨1:00-4:00期间不应出现的高负荷（如设备忘关或漏电）。</li>
+<li><strong>零功耗（Faults）：</strong> 模拟设备跳闸或传感器故障导致的读数归零。</li>
+</ul>
+<h3 id="3-业务分析"><a href="#3-业务分析" class="headerlink" title="3. 业务分析"></a>3. 业务分析</h3><h4 id="A-短期负荷预测-STLF"><a href="#A-短期负荷预测-STLF" class="headerlink" title="A. 短期负荷预测 (STLF)"></a>A. 短期负荷预测 (STLF)</h4><ul>
+<li><strong>目标：</strong> 给定前24小时的数据，预测未来1小时（4个点）的 <code>active_power_kW</code>。</li>
+<li><strong>特征工程建议：</strong> 将 <code>timestamp</code> 转换为 <code>hour_of_day</code>, <code>day_of_week</code>, <code>is_weekend</code>。</li>
+<li><strong>推荐模型：</strong> LSTM, GRU, 或简单的 XGBoost&#x2F;LightGBM。</li>
+</ul>
+<h4 id="B-功率异常检测"><a href="#B-功率异常检测" class="headerlink" title="B. 功率异常检测"></a>B. 功率异常检测</h4><ul>
+<li><p><strong>目标：</strong> 在不参考 <code>anomaly_label</code> 的情况下，识别出数据中的离群点。</p>
+</li>
+<li><p><strong>推荐模型：</strong> * <strong>无监督：</strong> 孤立森林 (Isolation Forest)、一类支持向量机 (One-Class SVM)。</p>
+</li>
+<li><p><strong>统计学：</strong> 移动平均窗口 (Rolling Mean) 结合 3-Sigma 原理。</p>
+</li>
+<li><p><strong>验证：</strong> 最后使用 <code>anomaly_label</code> 计算 F1-Score 或召回率。</p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>历史上的认知退化：钝化例子</title>
     <url>/2025/10/11/%E5%8E%86%E5%8F%B2%E4%B8%8A%E7%9A%84%E8%AE%A4%E7%9F%A5%E9%80%80%E5%8C%96%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E9%92%9D%E5%8C%96%E4%BE%8B%E5%AD%90/</url>
     <content><![CDATA[<h2 id="“钝化”并非-AI-专属-——-人类历史上多次出现认知退化趋势"><a href="#“钝化”并非-AI-专属-——-人类历史上多次出现认知退化趋势" class="headerlink" title="“钝化”并非 AI 专属 —— 人类历史上多次出现认知退化趋势"></a>“钝化”并非 AI 专属 —— 人类历史上多次出现认知退化趋势</h2><h3 id="1-计算工具时代：从算盘到电子计算器"><a href="#1-计算工具时代：从算盘到电子计算器" class="headerlink" title="1. 计算工具时代：从算盘到电子计算器"></a>1. 计算工具时代：从算盘到电子计算器</h3><p>在电子计算器刚刚出现的时代，许多人担心“孩子会不会不会心算了”“工程师会不会不再理解数量级”——这其实就是对“操作层认知被工具取代”的直觉反应。长时间依赖计算器确实可能使人的心算能力下降（特别是在没有工具辅助下），但与此同时，人们的思考重心往往从“手算”转移到了“模型建立”与“问题抽象”。换句话说，工具确实带来某些技能的钝化，但也促进了认知层次的转向。</p>
